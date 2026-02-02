@@ -1,0 +1,18 @@
+#Task 1:  GC% Calculator
+
+calculate_gc_content <- function(sequence) {
+  # Normalize to uppercase
+  seq_upper <- toupper(sequence)
+  
+  # Count G and C
+  g_count <- sum(strsplit(seq_upper, "")[[1]] == "G")
+  c_count <- sum(strsplit(seq_upper, "")[[1]] == "C")
+  
+  # Calculate percentage
+  gc_percent <- (g_count + c_count) / nchar(seq_upper) * 100
+  return(gc_percent)
+}
+
+#Example usage:
+calculate_gc_content("GCATTTAT") # -> 25
+calculate_gc_content("gcaTTTAT") # -> 25
