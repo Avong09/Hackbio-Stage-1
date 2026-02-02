@@ -25,3 +25,13 @@
   }
 
   protein_weight("Zichat")
+
+#Examples
+protein_weight("Zichat")
+[1] 0.6157
+>  protein_weight("Celina")
+[1] 0.75185
+>   protein_weight("gcaTTTAT")
+[1] 0.85088
+>   protein_weight("Z")
+[1] 0
